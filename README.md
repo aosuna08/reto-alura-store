@@ -2,15 +2,13 @@
 Este codigo es muy sencillo y busca presentar un analisis de datos que puedan ayudar al dueño de Alura Store para decidir que sucursal poner en venta de las 4 analizadas .
 
 # DEPENDENCIAS
-<p>
-	Este codigo solo requiere dos dependencias:
-		<li> Matplotlib </li>
-		<li> Pandas</li>
-		Las cuales se instalan en *Google Collab* con la siguiente linea de codigo:
-`
-	!pip install #Libreria
-`
-</p>
+Este codigo solo requiere dos dependencias:
+- Pandas
+- Matplotlib
+Las cuales se instalan en **Google Collab** con la siguiente linea de codigo:
+```python
+!pip install #libreria = version
+```
 
 
 # FUNCIONES
@@ -38,7 +36,7 @@ def facturacionTotal(tienda):
   total = tienda['Precio'].sum()
   return total
 ```
-Esta funcion aprovecha *Pandas* para realizar una suma total de la columna "Precio" para obtener la facturacion total de la sucursal. El parametro que se utiliza al llamar la funcion es la variable que tiene almacenada el enlace con la base de datos. Al final la funcion nos retorna el valor obtenido.
+Esta funcion aprovecha * Pandas * para realizar una suma total de la columna " Precio " para obtener la facturacion total de la sucursal. El parametro que se utiliza al llamar la funcion es la variable que tiene almacenada el enlace con la base de datos. Al final la funcion nos retorna el valor obtenido.
 
 ##Ventas por categoría
 ```python
