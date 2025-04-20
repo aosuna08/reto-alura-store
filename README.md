@@ -1,7 +1,7 @@
 # RETO ALURA STORE
 Este codigo es muy sencillo y busca presentar un analisis de datos que puedan ayudar al dueño de Alura Store para decidir que sucursal poner en venta de las 4 analizadas .
 
-#DEPENDENCIAS
+# DEPENDENCIAS
 <p>
 	Este codigo solo requiere dos dependencias:
 		<li> Matplotlib </li>
