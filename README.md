@@ -30,7 +30,7 @@ tienda4 = pd.read_csv(url4)
 ```
 Aqui se muestra el como utilizando la funcion *read* de la libreria *Pandas* importamos las bases de datos de las sucursales al codigo para poder realizar los analisis requeridos.
 
-##Análisis de facturación
+## Análisis de facturación
 ```python
 def facturacionTotal(tienda):
   total = tienda['Precio'].sum()
@@ -38,7 +38,7 @@ def facturacionTotal(tienda):
 ```
 Esta funcion aprovecha * Pandas * para realizar una suma total de la columna " Precio " para obtener la facturacion total de la sucursal. El parametro que se utiliza al llamar la funcion es la variable que tiene almacenada el enlace con la base de datos. Al final la funcion nos retorna el valor obtenido.
 
-##Ventas por categoría
+## Ventas por categoría
 ```python
 def ventaPorCategoria(tienda):
   conteo = tienda['Categoría del Producto'].value_counts()
@@ -46,7 +46,7 @@ def ventaPorCategoria(tienda):
 ```
 Para obtener las ventas por categoria, se utiliza la funcion *value counts* de *Pandas*, funcion cual nos retorna la frecuencia con la que se repite un valor, en este caso una cadena la cual seria el nombre de la categoria del producto que se ha vendido. El parametro que se utiliza al llamar la funcion es la variable que tiene almacenada el enlace con la base de datos. Al final la funcion nos retorna la cantidad de veces que se repiten todas las cadenas que estan almacenadas en esta columna.
 
-##Calificación promedio de la tienda
+## Calificación promedio de la tienda
 ```python
 def calificacionPromedio(tienda):
   promedio = tienda['Calificación'].sum() / len(tienda['Calificación'])
